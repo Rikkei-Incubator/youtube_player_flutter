@@ -255,7 +255,7 @@ class _RawYoutubePlayerState extends State<RawYoutubePlayer>
         <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no'>
     </head>
     <body>
-        <div id="player"></div>
+        <div id="player" style="${controller!.flags.hideVideoPlayer ? 'display: none; visibility: hidden;' : ''}"></div>
         <script>
             var tag = document.createElement('script');
             tag.src = "https://www.youtube.com/iframe_api";
